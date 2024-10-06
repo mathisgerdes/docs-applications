@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+
+% Other packages for formatting
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{fancyhdr}
+\usepackage{graphicx}             % For including images
+\usepackage{titlesec}             % For customizing section titles
+
+\usepackage{amsmath, physics, amssymb}
+\usepackage{enumitem}
+
+% Set up the custom page style for the first page
+\fancypagestyle{firstpagestyle}{
+    \fancyhf{} % Clear all headers and footers
+    \fancyhead[L]{\Large \textbf{Publication List}}
+    \fancyhead[R]{\large \href{https://www.mathisgerdes.com}{\textbf{Mathis Gerdes}}}
+    \renewcommand{\headrulewidth}{0pt} % Remove the default header rule
+    \fancyfoot[C]{- {\thepage} -}
+}
+
+% Regular page style for the rest of the document
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+\fancyhead[L]{\textbf{Publication List}} % Regular header on subsequent pages
+\fancyhead[R]{\textbf{Mathis Gerdes}}
+
+\fancyfoot[C]{- {\thepage} -}
+
+\usepackage{xcolor}
+\definecolor{royalblue}{rgb}{0.2, 0.3, 0.7} % Adjust the RGB values for your preferred shade of blue
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+
+\usepackage{parskip}
+\usepackage[sort&compress,numbers]{natbib}
+\setlength{\bibsep}{2pt}
+% \usepackage[document]{ragged2e}
+
+% Title information
+\title{}
+\author{}
+\date{}
+
+
+\begin{document}
+\thispagestyle{firstpagestyle}
+
+Publication list as of 4 October 2024. Full record available on Inspire HEP and arXiv.
+
+{\hfill \small
+\href{https://inspirehep.net/authors/2107097}{\includegraphics[height=14pt]{inspire.pdf} \hspace*{-7pt} \raisebox{0.5\height}{ INSPIRE}} \hspace*{10pt}
+\href{https://arxiv.org/a/gerdes_m_1.html}{\includegraphics[height=14pt]{arxiv.pdf} \hspace*{-10pt} \raisebox{0.5\height}{ ARXIV}}
+}
+
+\textbf{Published journal articles:}
+
+\begin{itemize}[left=0pt, itemsep=5pt]
+    \item J. Alvey, \underline{M. Gerdes}, C. Weniger.
+    \textit{Albatross: a scalable simulation-based inference pipeline for analysing stellar streams in the Milky Way.}
+    \href{https://doi.org/10.1093/mnras/stad2458}{Mon.Not.Roy.Astron.Soc. 525 (2023) 3, 3662-3681}.
+    [arXiv:\href{https://arxiv.org/abs/2304.02032}{2304.02032}].
+
+    \item \underline{M. Gerdes}, S. Krippendorf.
+    \textit{CYJAX: A package for Calabi-Yau metrics with JAX.}
+    \newline \href{https://doi.org/10.1088/2632-2153/acdc84}{Mach.Learn.Sci.Tech. 4 (2023) 2, 02503.}
+    [arXiv:\href{https://arxiv.org/abs/2211.12520}{2211.12520}].
+
+    \item \underline{M. Gerdes}, P. de Haan, C. Rainone, R. Bondesan, M. C. N. Cheng.
+    \textit{Learning Lattice Quantum Field Theories with Equivariant Continuous Flows.}
+    \href{https://doi.org/10.21468/SciPostPhys.15.6.238}{SciPost Phys. 15 (2023), 238.}
+    [arXiv:\href{https://arxiv.org/abs/2207.00283}{2207.00283}].
+
+    \item L. B. Anderson, \underline{M. Gerdes}, J. Gray, S. Krippendorf, N. Raghuram, F. Ruehle.
+    \linebreak \textit{Moduli-dependent Calabi-Yau and SU(3)-structure metrics from Machine Learning.}
+    \href{https://doi.org/10.1007/JHEP05(2021)013}{JHEP 05 (2021), 013.}
+    [arXiv:\href{https://arxiv.org/abs/2012.04656}{2012.04656}].
+\end{itemize}
+
+\vspace{7pt}
+\textbf{Under review:}
+
+\begin{itemize}[left=0pt, itemsep=5pt]
+    \item \underline{M. Gerdes}, M. Welling, M. C. N. Cheng. \textit{RG-Guided Denoising Diffusion Models.}
+    Submitted to ICRL -- pending review.
+    [arxXiv:\href{https://arxiv.org/abs/2410.02667}{2410.02667}]
+\end{itemize}
+
+\vspace{7pt}
+\textbf{In preparation:}
+
+\begin{itemize}[left=0pt, itemsep=5pt]
+    \item \underline{M. Gerdes}, P. de Haan, R. Bondesan, M. C. N. Cheng. \textit{Continuous Normalizing Flows For Lattice Gauge Theories.} To appear October 2024.
+    \item \underline{M. Gerdes}, C. Weniger. \textit{On Optimal Coverage Intervals at the Bayesian-Frequentist Crossroads.} To appear 2024.
+\end{itemize}
+
+\end{document}

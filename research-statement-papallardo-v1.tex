@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+
+% Other packages for formatting
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{fancyhdr}
+\usepackage{graphicx}             % For including images
+\usepackage{titlesec}             % For customizing section titles
+
+\usepackage[numbers]{natbib}
+
+
+% Set up the custom page style for the first page
+\fancypagestyle{firstpagestyle}{
+    \fancyhf{} % Clear all headers and footers
+    \fancyhead[L]{\Large \textbf{Research Statement}}
+    \fancyhead[R]{\large \href{https://www.mathisgerdes.com}{\textbf{Mathis Gerdes}}}
+    \renewcommand{\headrulewidth}{0pt} % Remove the default header rule
+    \fancyfoot[C]{- {\thepage} -}
+}
+
+% Regular page style for the rest of the document
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+\fancyhead[L]{\textbf{Research Statement}} % Regular header on subsequent pages
+\fancyhead[R]{\textbf{Mathis Gerdes}}
+\fancyfoot[C]{- {\thepage} -}
+
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+\usepackage{xcolor}
+\definecolor{royalblue}{RGB}{65, 105, 225} % Adjust the RGB values for your preferred shade of blue
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+
+\usepackage{parskip}
+\usepackage[numbers]{natbib}
+
+% Title information
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+\thispagestyle{firstpagestyle}
+
+My deep interest in theoretical physics, particularly quantum field theory, stems from the elegance of its mathematical foundations and its grand ambition to describe the fundamental nature of reality.
+This passion drives my research, which centers on developing machine learning techniques to solve key problems in string theory and quantum chromodynamics (QCD), drawing on my extensive expertise in advanced computational methods.
+
+\textbf{\textit{{Calabi-Yau Metrics}}}\\
+Studying theoretical and mathematical physics at the LMU Munich raised my interest in string theory and in particular Calabi-Yau manifolds, which play a crucial role in string compactifications. Their geometric structure encoded in the metric is not known analytically, but is required for example to determine the Yukawa couplings of the low-energy effective theory. This led me to develop machine learning methods to approximate Ricci-flat metrics on these manifolds. By expressing a spectral ansatz that inherently guarantees important differential properties as a trainable neural network, I efficiently achieved highly accurate results while simultaneously learning their moduli dependence. Building on this initial work during my MSc thesis, I have since published a library of computational methods \cite{gerdes2023CYJAXPackage} and co-authored an influential article comparing different machine learning approaches to this problem in collaboration with international collaborators \cite{anderson2021ModulidependentCalabiYau}.
+I have particularly enjoyed the challenge of accurately translating intricate mathematical descriptions into efficient computer implementations, as it forces a deep understanding of the former, and I hope to continue finding such challenges in my future work.
+
+\textbf{\textit{{Lattice Quantum Field Theory}}}\\
+QCD at the low-energy regime cannot be studied using traditional perturbative methods, leading to the development of lattice QCD.
+Despite significant successes, lattice QCD still faces major computational challenges and a rising demand for accuracy due to evolving experimental results. Machine learning techniques offer a fundamentally new approach by learning complex distributions, allowing for faster and more scalable sampling.
+I have developed {continuous normalizing flows} for scalar quantum field theories, expressing an ordinary differential equation as a neural network that preserves the physical symmetries of the theory \cite{gerdes2023LearningLattice}.
+This advancement allowed us to scale our method to large lattice sizes while obtaining state-of-the-art sampling quality, which has led to it being adoption by other researchers, for example to numerically study the Nambu-Goto string \cite{casella2024SamplingLattice}.
+
+I have recently extended this work to gauge theories, developing flexible gauge-equivariant continuous flows. To achieve this, I implemented an integration scheme for matrix group manifolds that facilitates efficient gradient computation, and designed a gauge-equivariant ODE architecture that delivers state-of-the-art sampling quality.
+I am excited to continue this work with my current and future collaborators, exploring multi-scale generation, transfer learning, and exploring the thermodynamic properties of these flows, as well as their deeper connection to the renormalization group (RG).
+
+% \textbf{\textit{{Physis for AI: Diffusion Models and Renormalization Group Flow}}}\\
+The latter idea, in particular, has led me to explore connections between RG and diffusion models. This has grown into a collaboration with Max Welling in the field of computer science, where we have recently developed a generalized RG-inspired framework for diffusion models.
+Another example of interdisciplinary work I have enjoyed is in statistical data analysis and in particular simulation based inference, which incorporates machine learning to tackle large numbers of nuisance parameters that can arise from more faithful theoretical models.
+In this context, I have contributed to a study of stellar streams which may yield insight into the nature and distributions of dark matter sub-halos in the Milky-Way by analyzing astrophysical data \cite{alvey2023AlbatrossScalable}.
+I am currently investigating novel optimization schemes that may reconcile certain conflicts between frequentist and Bayesian approaches in this field. \textcolor{blue}{too tangential/unspecific?}
+
+
+
+Future Directions
+My long-term research goal is to develop computational frameworks that enable the exploration of new regimes in quantum field theory and string theory, particularly by reducing the computational barriers that currently limit large-scale simulations. Machine learning is a central component of this vision, offering tools to rethink how we model physical systems at both the smallest and largest scales.
+
+At MIT, I would benefit from the vibrant research community and unparalleled resources, such as access to high-performance computing infrastructure and interdisciplinary collaborations. I plan to continue working on cutting-edge problems in lattice QCD and string theory, while also contributing to MIT's broader research agenda in quantum field theory, cosmology, and computational physics.
+
+\paragraph{\color{royalblue}{Research Plans.}}
+In my future research I hope to deepen my
+Having gained significant experience in both developing and applying machine learning tools to solve theoretical physics problems, I aim to continue pushing the boundaries of computational techniques in physics. My future research will focus on:
+\begin{itemize}
+    \item Innovating in ML techniques, such as normalizing flows and generative models, for problems in quantum field theory and lattice computations.
+    \item Expanding applications of machine learning in both gauge theories and gravity, particularly exploring the connections between RG flow and generative diffusion models.
+    \item Leveraging simulation-based inference to refine our understanding of dark matter structure in the cosmos, especially through astrophysical data from surveys like Gaia.
+\end{itemize}
+
+In these endeavors, I aim not only to solve existing challenges but also to pioneer new methods that will significantly enhance computational physics as a whole.
+
+
+MIT’s unique combination of world-class research in both machine learning and physics makes it an ideal place for me to pursue my research. I am particularly excited about the opportunity to collaborate with Prof. Phiala Shanahan’s group, which is making significant strides in lattice field theory and ML applications. Additionally, the expertise of Prof. Jesse Thaler and Philip Harris in ML for collider physics presents a fascinating opportunity for interdisciplinary collaboration.
+
+Moreover, I see a strong connection between my work in simulation-based inference for stellar streams and Prof. Tracy Slatyer’s research on astrophysical data analysis. Collaborating with her group would allow me to apply my ML-based inference tools to new areas of dark matter research. Lastly, MIT’s AI for physics community, including researchers like Max Tegmark, whose work on Poisson Flow Generative Models relates closely to my diffusion model research, offers a rich environment for intellectual exchange.
+
+MIT’s collaborative and innovative atmosphere will allow me to build on my current expertise and develop new research directions, furthering the application of machine learning in theoretical physics.
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}
