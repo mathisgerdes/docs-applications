@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+
+% Other packages for formatting
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\linespread{1.02}
+% \onehalfspacing
+\usepackage{fancyhdr}
+\usepackage{graphicx}             % For including images
+\usepackage{titlesec}             % For customizing section titles
+
+\usepackage{amsmath, physics, amssymb}
+\usepackage{parskip}
+
+% Set up the custom page style for the first page
+\fancypagestyle{firstpagestyle}{
+    \fancyhf{} % Clear all headers and footers
+    \fancyhead[L]{\LARGE \textbf{Cover Letter}}
+    \fancyhead[R]{\Large \href{https://www.mathisgerdes.com}{\textbf{Mathis Gerdes}}}
+    \renewcommand{\headrulewidth}{0pt} % Remove the default header rule
+    % \fancyfoot[C]{- {\thepage} -}
+}
+
+% Regular page style for the rest of the document
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+\fancyhead[L]{\textbf{Cover Letter}} % Regular header on subsequent pages
+\fancyhead[R]{\textbf{Mathis Gerdes}}
+% \fancyfoot[C]{- {\thepage} -}
+
+\usepackage{xcolor}
+\definecolor{royalblue}{rgb}{0.2, 0.3, 0.7} % Adjust the RGB values for your preferred shade of blue
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+
+% Title information
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+\thispagestyle{firstpagestyle}
+
+% Header with right-aligned personal information
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\phantom{
+\today \\
+}
+\vspace{0.25cm} \\
+IAIFI, Massachusetts Institute of Technology \\
+77 Massachusetts Avenue, 26-505 \\
+Cambridge, MA 02139 \\
+
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\flushright
+\today \\
+\vspace{0.25cm}
+University of Amsterdam \\
+Science Park 904 \\
+Amsterdam 1098 XH \\
+The Netherlands \\
+\end{minipage}
+
+\vspace{20pt}
+
+\noindent
+\textbf{Dear members of the IAIFI Fellowship Committee,}
+
+I am writing to apply for the 2025-2028 IAIFI Fellowship. I am a final-year PhD candidate at the University of Amsterdam, supervised by Miranda C. N. Cheng and Christoph Weniger. My research lies at the intersection of physics and AI, where I have developed generative models for physics, AI-based approaches in differential geometry, and leveraged physical principles to advance foundational AI techniques.
+This range of experience equips me to bridge fields and will allow me to collaborate effectively within IAIFI.
+
+
+My research aligns closely with IAIFI's mission, and I am excited by the prospect of working with its diverse group of researchers. Specifically, my work spans:
+\begin{itemize}
+    \item \textbf{Calabi-Yau Metrics}: I have pioneered methods for approximating Ricci-flat metrics on Calabi-Yau manifolds using machine learning, which aligns closely with the research interests of Fabian Ruehle, James Halverson and Michael Douglas, who have applied innovative machine learning techniques to string theory and mathematics.
+    \item \textbf{Lattice quantum field theory:} I have developed equivariant continuous normalizing flows that leverage symmetries of the target theory to improve sampling from complex distributions. This connects to the research of Tess Smidt on equivariant networks, William Detmold on lattice QCD and in particular building on work by Phiala Shanahan's group who have pioneered AI in lattice QCD.
+    \item \textbf{Physics-Inspired AI:} Inspired by insights from the renormalization group, I have recently proposed a novel framework for diffusion model.
+    This exploration of physics informed machine learning reflects questions that occur frequently in the work of Max Tegmark.
+\end{itemize}
+
+
+My experience in both theoretical physics and cutting-edge AI enables me to bring together researchers from different fields. As an IAIFI Fellow, I would actively foster these collaborations, connecting experts across diverse disciplines. By integrating my existing network of collaborators with new opportunities at IAIFI, I aim to advance innovative research at the intersection of AI and fundamental physics.
+
+I am confident that my interdisciplinary background, along with my strong computational and theoretical expertise, aligns with IAIFI's vision of pushing the boundaries of both AI and physics. I look forward to the opportunity to contribute to this vibrant research community. I appreciate your consideration and look forward to hearing from you.
+
+\vspace{10pt}
+\noindent
+\flushright
+Sincerely, \\
+Mathis Gerdes \\
+\href{mailto:m.gerdes@uva.nl}{m.gerdes@uva.nl}
+
+\end{document}

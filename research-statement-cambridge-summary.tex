@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+
+% Other packages for formatting
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+% \onehalfspacing
+\linespread{1.3}
+\usepackage{fancyhdr}
+\usepackage{graphicx}             % For including images
+\usepackage{titlesec}             % For customizing section titles
+
+\usepackage{amsmath, physics, amssymb}
+
+\setlength{\headheight}{25.0pt}
+
+% Set up the custom page style for the first page
+\fancypagestyle{firstpagestyle}{
+    \fancyhf{} % Clear all headers and footers
+    \fancyhead[L]{\LARGE \textbf{Research Statement Summary}}
+    \fancyhead[R]{\Large \href{https://www.mathisgerdes.com}{\textbf{Mathis Gerdes}}}
+    \renewcommand{\headrulewidth}{0pt} % Remove the default header rule
+    \fancyfoot[C]{- {\thepage} -}
+}
+
+% Regular page style for the rest of the document
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+\fancyhead[L]{\textbf{Research Statement}} % Regular header on subsequent pages
+\fancyhead[R]{\textbf{Mathis Gerdes}}
+\fancyfoot[C]{- {\thepage} -}
+
+\usepackage{xcolor}
+\definecolor{royalblue}{rgb}{0.2, 0.3, 0.7} % Adjust the RGB values for your preferred shade of blue
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+
+\usepackage{parskip}
+\usepackage[sort&compress,numbers]{natbib}
+\setlength{\bibsep}{2pt}
+
+% Title information
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+\thispagestyle{firstpagestyle}
+
+\section*{Advancing Non-Perturbative QFT with Machine Learning}
+\textit{Proposed Host Department: Department of Applied Mathematics and Theoretical Physics (DAMTP)}
+
+My proposed research aims to leverage cutting-edge computational and machine learning techniques to address critical open questions about non-perturbative quantum field theory and string compactifications.
+Building on my expertise in lattice quantum field theory (QFT), string theory, and machine learning, my work will focus on two interconnected themes:
+
+\paragraph{Lattice Quantum Field Theory and Non-Perturbative Dynamics}
+The non-perturbative study of quantum chromodynamics (QCD) remains a difficult challenge and central to problems from early universe physics to precision experiments and particle colliders.
+Due to the strong coupling of QCD at low energies, perturbative methods fail and necessitate lattice-based numerical approaches to study phenomena such as confinement, chiral symmetry breaking, and the hadron spectrum.
+I will develop advanced machine learning-based generative models to address critical bottlenecks in lattice QFT sampling, aiming to address challenges such as critical slowing down and topological freezing. By incorporating physical knowledge from symmetries to the renormalization group theory into continuous normalizing flows, I aim to scale these methods to larger lattice sizes, pushing the limits of computational efficiency and accuracy in lattice QCD simulations.
+
+\paragraph{String Compactifications and Calabi-Yau Metrics}
+String theory predicts hidden dimensions with profound implications for particle physics and cosmology. These dimensions are often described by Calabi-Yau manifolds, whose Ricci-flat metrics are critical for determining properties of the low-energy effective field theories that emerge from string compactifications. However, these metrics are not known analytically, and existing numerical methods are computationally intensive and limited in scope. My project will build on novel machine learning methods to approximate Ricci-flat metrics with unprecedented accuracy and efficiency, leveraging a spectral ansatz that guarantees essential differential properties and incorporates moduli dependence directly into the framework.
+
+Ultimately, this work aims to precise theoretical insights with computational advancements, opening new pathways to calculations of physical quantities such as Yukawa couplings and the Kähler potential, which are crucial for understanding the vacuum structure of string theory and its phenomenological implications.
+
+This project sits at the intersection of particle physics, and computational science, aligning with DAMTP's contributions to the Extreme Universe initiative. My research will provide tools and insights to address some of the most fundamental questions in modern physics. Thanks to the versatility of these tools, I see great potential for fostering interdisciplinary collaborations within Cambridge and beyond.
+
+\end{document}

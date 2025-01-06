@@ -3,8 +3,8 @@
 % Other packages for formatting
 \usepackage[margin=1in]{geometry}
 \usepackage{setspace}
-\linespread{1.05}
 % \onehalfspacing
+\linespread{1.15}
 \usepackage{fancyhdr}
 \usepackage{graphicx}             % For including images
 \usepackage{titlesec}             % For customizing section titles
@@ -44,16 +44,15 @@
 \begin{document}
 \thispagestyle{firstpagestyle}
 
-My research seeks to address complex phenomena in quantum field theory and string theory by pioneering computational and AI techniques, enabling new insights into non-perturbative regimes.
-My experience spans machine learning approachees in lattice quantum chromodynamics (QCD) and string compactifications, where sophisticated tools are essential to push forward theoretical insights.
 
-Advances in computational paradigms and hardware driven by machine learning are unlocking new ways to tackle key challenges in theoretical physics.
-My \textbf{primary research interest} is to create novel computational frameworks that push the boundaries of quantum field theory and theoretical physics.
-To achieve this, I draw on my broad experience with emerging machine learning techniques in science, as well as my strong background in both theoretical physics and computer science.
+My research seeks to address complex questions in quantum field theory and string theory by pioneering computational and machine learning techniques, enabling new insights into non-perturbative regimes.
+My experience spans lattice quantum chromodynamics (QCD) and string compactifications, where sophisticated tools are essential to push forward theoretical insights.
 
-My research spans machine learning applications to \textbf{Calabi-Yau metrics} in string theory, sampling methods for \textbf{lattice quantum field theory}, applying physics for innovations in \textbf{foundational AI}, and \textbf{simulation-based inference}.
-Throughout these projects I have deepened my proficiency in computational methods, evident also in my contributions to open source software, which has enabled rapid iteration in my research.
-I hope to bring this expertise at the intersection of AI and physics to the IAIFI community, building interdisciplinary bridges between experts in different fields, and leveraging my existing network of collaborators.
+Advances in computational paradigms and hardware driven by machine learning are unlocking new
+ways to tackle key challenges in theoretical physics. My goal is to create novel computational
+frameworks that push the boundaries of quantum field theory and theoretical physics. To achieve
+this, I will draw on my broad experience with emerging machine learning techniques for scientific
+problems, as well as my strong background in both theoretical physics and computer science.
 
 \paragraph{\textit{{Calabi-Yau Metrics.}}}
 Calabi-Yau manifolds play a crucial role in string compactifications.
@@ -74,13 +73,9 @@ Quantum chromodynamics in the non-perturbative regime remains one of the most ch
 Lattice QCD provides a powerful framework for exploring this regime, but computational limitations have historically restricted our ability to fully explore it.
 In my research, I have pioneered continuous normalizing flows for learning the complex distributions arising in lattice quantum field theory. By building the symmetries of the discretized theory directly into a trainable ordinary differential equation that parametrizes the field transformations, I have demonstrated state of the art performance on scalar theories \cite{gerdes2023LearningLattice}.
 
-Building on these advances, I have recently devised and implemented a flexible framework of equivariant continuous normalizing flows on matrix Lie groups (example in Figure \ref{fig:su3}).
-In particular, I have applied this to define continuous gauge equivariant flows for pure Yang-Mills theories in two dimensions, achieving state of the art performance on SU(2) and SU(3) \cite{gerdes2024continuousGauge}.
-% I have recently extended this work to gauge theories, developing flexible gauge-equivariant continuous flows.
-This involved implementing an integration scheme for matrix group manifolds that facilitates efficient gradient computation by leveraging modern ML libraries, and designed a new gauge-equivariant ODE architecture. % that delivers state-of-the-art sampling quality.
-
-\textbf{\color{royalblue}{Future Directions.}}
-I will continue this work with my collaborators by addressing the problem of scaling up to larger lattice sizes, including exploring multi-scale generation, transfer learning, and the thermodynamic properties of these flows, as well as their deeper connection to the renormalization group (RG). Leveraging the structural overlap in mathematical concepts, I have also recently become excited about the prospect of combining my experience in the context of Calabi-Yau manifolds to improve sampling for $\mathbb{CP}^N$ models, which suffers from topological freezing.
+I have recently extended this work to gauge theories, developing flexible gauge-equivariant continuous flows \cite{gerdes2024continuousGauge}.
+To achieve this, I implemented an integration scheme for matrix group manifolds that facilitates efficient gradient computation by leveraging modern ML libraries, and designed a new gauge-equivariant ODE architecture that delivers state-of-the-art sampling quality.
+A continuous flow on a single SU(3) element is shown in Figure \ref{fig:su3}.
 
 \begin{figure}
     \centering
@@ -91,25 +86,24 @@ I will continue this work with my collaborators by addressing the problem of sca
     \vspace{-10pt}
 \end{figure}
 
-\paragraph{\textit{{Physics for AI.}}}
-Informed by my work on generative models for lattice quantum field theory, I have explored connections between RG and diffusion models.
-This led me to developed a generalized RG-inspired framework for diffusion models \cite{gerdes2024gudgenerationunifieddiffusion}, in collaboration with Prof Max Welling, that enlarges the design space for diffusive processes and makes explicit its sequential nature.
-
 \textbf{\color{royalblue}{Future Directions.}}
-It is clear that notion of information and computation are foundational both to physics and machine learning.
-Studying ML in the context of theoretical physics is thus bound to be fruitful in both directions, and I will continue exploring concrete ideas that have arisen from my work, including connections between generative models and thermodynamics, RG flows, and ODEs.
+I will continue this work with my collaborators by addressing the problem of scaling up to larger lattice sizes, including exploring multi-scale generation, transfer learning, and the thermodynamic properties of these flows, as well as their deeper connection to the renormalization group (RG). Leveraging the structural overlap in mathematical concepts, I have also recently become excited about the prospect of combining my experience in the context of Calabi-Yau manifolds to improve sampling for $\mathbb{CP}^N$ models, which suffers from topological freezing.
 
-\paragraph{\textit{{Simulation based inference and statistics.}}}
-Yet another example of interdisciplinary work I have enjoyed is in statistical data analysis and in particular simulation based inference, which incorporates machine learning to tackle large numbers of nuisance parameters that can arise from more faithful physical models.
+I am excited to explore how these sampling methods developed in the context of lattice quantum field theory can be applied in condenced matter problems more broadly.
+In particular, the idea of inverse RG has shown recent success for spin glass models.
+This is closely related to the problem of scaling up to larger lattice sizes, which is present in both cases.
+
+Modeling neural wavefunctions using techniques similar to generative models has shown success in fields such as quantum chemistry and many-body systems. Exploiting the technological overlap, I aim to extend our methods developed for generative models to explore neural wavefunctions for lattice QCD. This could provide a new approach to mitigate the sign problem.
+
+\paragraph{\textit{{Interdisciplinary Research Bridging Theory and Computation.}}}
+I enjoy applying my knowledge across domain boundaries.
+For example, informed by my work on generative models for lattice quantum field theory, I have explored connections between RG and diffusion models.
+This led me to developed a generalized RG-inspired framework for diffusion models \cite{gerdes2024gudgenerationunifieddiffusion}, in collaboration with Prof Max Welling, that enlarges the design space for diffusive processes and makes explicit its sequential nature.
+Another example of interdisciplinary work I have enjoyed is in statistical data analysis and in particular simulation based inference, which incorporates machine learning to tackle large numbers of nuisance parameters that can arise from more faithful physical models.
 In this context, I have developed an efficient simulator for stellar streams evolving in a gravitational background, to advance theoretical insight derived from astrophysical observations  \cite{alvey2023AlbatrossScalable}.
 This led me to study theoretical statistics and differences between frequentist and Bayesian approaches in this field.
 Having discovered an interesting dual point of view between these, I am presently studying optimization schemes that combine and unify notions from both frequentism and Bayesianism.
 
-% \renewcommand{\refname}{}
-
-% \vspace{15pt}
-% \hrule
-% \vspace{-35pt}
 \bibliographystyle{abbrvnat-sorted}
 {
     \small

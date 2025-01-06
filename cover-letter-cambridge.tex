@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+
+% Other packages for formatting
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\linespread{1.02}
+% \onehalfspacing
+\usepackage{fancyhdr}
+\usepackage{graphicx}             % For including images
+\usepackage{titlesec}             % For customizing section titles
+
+\usepackage{amsmath, physics, amssymb}
+\usepackage{parskip}
+
+% Set up the custom page style for the first page
+\fancypagestyle{firstpagestyle}{
+    \fancyhf{} % Clear all headers and footers
+    \fancyhead[L]{\LARGE \textbf{Cover Letter}}
+    \fancyhead[R]{\Large \href{https://www.mathisgerdes.com}{\textbf{Mathis Gerdes}}}
+    \renewcommand{\headrulewidth}{0pt} % Remove the default header rule
+    % \fancyfoot[C]{- {\thepage} -}
+}
+
+% Regular page style for the rest of the document
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+\fancyhead[L]{\textbf{Cover Letter}} % Regular header on subsequent pages
+\fancyhead[R]{\textbf{Mathis Gerdes}}
+% \fancyfoot[C]{- {\thepage} -}
+
+\usepackage{xcolor}
+\definecolor{royalblue}{rgb}{0.2, 0.3, 0.7} % Adjust the RGB values for your preferred shade of blue
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+
+% Title information
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+\thispagestyle{firstpagestyle}
+
+% Header with right-aligned personal information
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\phantom{
+\today \\
+}
+\vspace{0.2cm} \\
+Faculty of Mathematics \\
+Wilberforce Road \\
+Cambridge CB3 0WA \\
+United Kingdom \\
+
+
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\flushright
+\today \\
+\vspace{0.2cm}
+University of Amsterdam \\
+Science Park 904 \\
+Amsterdam 1098 XH \\
+The Netherlands \\
+\end{minipage}
+
+\vspace{20pt}
+
+\noindent
+\textbf{Dear Members of the Infosys-Cambridge AI Lab Selection Committee,}
+
+I am writing to express my strong interest in the position of Postdoctoral Research Associate in AI and Theoretical Physics within the Infosys-Cambridge AI Lab. Currently, I am a final-year PhD candidate at the University of Amsterdam, supervised by Miranda C. N. Cheng and Christoph Weniger.
+My research lies at the intersection of machine learning and theoretical physics, with a focus on leveraging computational techniques to address fundamental challenges in quantum field theory.
+
+The Infosys-Cambridge AI Lab's mission to advance scientific discovery through automation and to develop a mathematical understanding of machine learning aligns closely with my research  and goals. My recent work includes:
+\begin{itemize}
+    \item \textbf{Lattice Quantum Field Theory:} I advanced continuous normalizing flows for efficient sampling from high-dimensional distributions.
+    \item \textbf{Calabi-Yau Metrics:} My contributions include the application of machine learning techniques to approximate Ricci-flat metrics with moduli dependence, going beyond traditional numerical approaches.
+    \item \textbf{Physics-Inspired AI:} Recently, I proposed a novel framework for diffusion models informed by insights from the renormalization group, exploring how theoretical physics principles can drive innovations in machine learning.
+    \item \textbf{Simulation-Based Inference:} To demonstrate how AI can enable robust analysis of complex astrophysical systems, I implemented a scalable, JAX-accelerated pipelines to infer physical parameters of galactic stellar streams.
+\end{itemize}
+
+The Infosys-Cambridge AI Lab's emphasis on interdisciplinary collaboration resonates strongly with my background. My research has consistently bridged domains, and I thrive in collaborative environments that connect physics, AI, and applied mathematics.
+For instance, my work on equivariant flows for physics leverages group theory to address computational challenges, and my study of Calabi-Yau metrics integrates differential geometry with modern AI techniques.
+
+Thank you for considering my application. I look forward to the opportunity to contribute to the lab's mission of driving advances in AI and science while collaborating with its vibrant community of researchers.
+
+% \vspace{5pt}
+\noindent
+\flushright
+Sincerely, \\
+Mathis Gerdes \\
+\href{mailto:m.gerdes@uva.nl}{m.gerdes@uva.nl}
+
+\end{document}

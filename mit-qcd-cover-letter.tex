@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+
+% Other packages for formatting
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\linespread{1.02}
+% \onehalfspacing
+\usepackage{fancyhdr}
+\usepackage{graphicx}             % For including images
+\usepackage{titlesec}             % For customizing section titles
+
+\usepackage{amsmath, physics, amssymb}
+\usepackage{parskip}
+
+% Set up the custom page style for the first page
+\fancypagestyle{firstpagestyle}{
+    \fancyhf{} % Clear all headers and footers
+    \fancyhead[L]{\LARGE \textbf{Cover Letter}}
+    \fancyhead[R]{\Large \href{https://www.mathisgerdes.com}{\textbf{Mathis Gerdes}}}
+    \renewcommand{\headrulewidth}{0pt} % Remove the default header rule
+    % \fancyfoot[C]{- {\thepage} -}
+}
+
+% Regular page style for the rest of the document
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+\fancyhead[L]{\textbf{Cover Letter}} % Regular header on subsequent pages
+\fancyhead[R]{\textbf{Mathis Gerdes}}
+% \fancyfoot[C]{- {\thepage} -}
+
+\usepackage{xcolor}
+\definecolor{royalblue}{rgb}{0.2, 0.3, 0.7} % Adjust the RGB values for your preferred shade of blue
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+
+% Title information
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+\thispagestyle{firstpagestyle}
+
+% Header with right-aligned personal information
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\phantom{
+\today \\
+}
+\vspace{0.2cm} \\
+Center for Theoretical Physics \\
+MIT \\
+77 Mass Ave, 6-307 \\
+Cambridge, MA 02139
+
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\flushright
+\today \\
+\vspace{0.2cm}
+University of Amsterdam \\
+Science Park 904 \\
+Amsterdam 1098 XH \\
+The Netherlands \\
+\end{minipage}
+
+\vspace{30pt}
+
+\noindent
+\textbf{Dear Members of the MIT Center for Theoretical Physics Selection Committee,}
+
+\vspace{15pt}
+
+I am writing to express my strong interest in the postdoctoral position in nuclear theory at the MIT Center for Theoretical Physics (CTP). Currently, I am completing my PhD in Theoretical Physics at the University of Amsterdam under the supervision of Miranda C. N. Cheng and Christoph Weniger. My research focuses on advancing computational techniques in lattice quantum field theory (QFT) to explore the non-perturbative regime of quantum chromodynamics (QCD).
+
+At MIT, I am particularly excited about the opportunity to collaborate with researchers such as Phiala Shanahan and William Detmold, whose work on lattice QCD aligns closely with my own efforts to address computational challenges in non-perturbative quantum field theory. I bring a strong computational and theoretical background, along with an enthusiasm for collaborative and interdisciplinary research.
+
+In my work on lattice QFT, I have developed a class of equivariant continuous normalizing flows for scalar and gauge theories, building on techniques pioneered at MIT. This aims to addresses key computational bottlenecks in lattice simulations, including critical slowing down near phase transitions.
+
+In addition to my primary focus on machine learning for lattice QCD, I have applied my computational expertise to related areas of theoretical physics. For instance, I have pioneered machine learning applications to string theory, developing neural-network-based approaches for approximating Ricci-flat metrics on Calabi-Yau manifolds. Additionally, I have worked on statistical inference techniques for astrophysical observations, designing a simulation-based inference pipeline for analyzing stellar streams to probe dark matter substructure. These projects reflect my adaptability and broad computational expertise, complementing my work on sampling problems.
+
+As a postdoctoral researcher at MIT, I aim to further develop scalable lattice QCD methodologies and investigate their applications to key areas of QCD. Thank you for considering my application. I look forward to the opportunity to join the MIT nuclear theory group, collaborate with its distinguished members, and contribute to the center's groundbreaking research in QCD and related areas.
+
+
+\vspace{15pt}
+\noindent
+\flushright
+Sincerely, \\
+Mathis Gerdes \\
+\href{mailto:m.gerdes@uva.nl}{m.gerdes@uva.nl}
+
+\end{document}

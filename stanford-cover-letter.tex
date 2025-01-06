@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+
+% Other packages for formatting
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\linespread{1.02}
+% \onehalfspacing
+\usepackage{fancyhdr}
+\usepackage{graphicx}             % For including images
+\usepackage{titlesec}             % For customizing section titles
+
+\usepackage{amsmath, physics, amssymb}
+\usepackage{parskip}
+
+% Set up the custom page style for the first page
+\fancypagestyle{firstpagestyle}{
+    \fancyhf{} % Clear all headers and footers
+    \fancyhead[L]{\LARGE \textbf{Cover Letter}}
+    \fancyhead[R]{\Large \href{https://www.mathisgerdes.com}{\textbf{Mathis Gerdes}}}
+    \renewcommand{\headrulewidth}{0pt} % Remove the default header rule
+    % \fancyfoot[C]{- {\thepage} -}
+}
+
+% Regular page style for the rest of the document
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+\fancyhead[L]{\textbf{Cover Letter}} % Regular header on subsequent pages
+\fancyhead[R]{\textbf{Mathis Gerdes}}
+% \fancyfoot[C]{- {\thepage} -}
+
+\usepackage{xcolor}
+\definecolor{royalblue}{rgb}{0.2, 0.3, 0.7} % Adjust the RGB values for your preferred shade of blue
+\usepackage[colorlinks=true, linkcolor=royalblue, urlcolor=royalblue, citecolor=royalblue]{hyperref}
+
+% Title information
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+\thispagestyle{firstpagestyle}
+
+% Header with right-aligned personal information
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\phantom{
+\today \\
+}
+\vspace{0.2cm} \\
+Stanford Institute for Theoretical Physics \\
+Varian Physics Lab \\
+382 Via Pueblo Mall \\
+Stanford, CA 94305-4060
+
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\flushright
+\today \\
+\vspace{0.2cm}
+University of Amsterdam \\
+Science Park 904 \\
+Amsterdam 1098 XH \\
+The Netherlands \\
+\end{minipage}
+
+\vspace{20pt}
+
+\noindent
+\textbf{Dear Stanford Institute for Theoretical Physics Selection Committee,}
+
+I am writing to express my interest in the postdoctoral position at the Stanford Institute for Theoretical Physics (SITP). Currently, I am a final-year Ph.D. candidate in Theoretical Physics at the University of Amsterdam, supervised by Miranda C. N. Cheng and Christoph Weniger. My research lies at the intersection of theoretical physics and machine learning, focusing on the application of advanced generative models to quantum field theories, Calabi-Yau metrics, and physics-inspired AI frameworks. This experience has allowed me to pioneer interdisciplinary approaches and build research methodologies that complement SITP's goals of exploring fundamental questions in quantum field theory, string theory, and high-dimensional quantum systems.
+
+My recent projects, spanning both quantum field theory and complex geometries, align closely with SITP's research emphasis, particularly in:
+
+\begin{itemize}
+    \item \textbf{Lattice Quantum Field Theory}: I have developed equivariant continuous normalizing flows that leverage symmetries of the target theory to improve sampling from complex distributions.
+    \item \textbf{Machine Learning for Calabi-Yau Metrics}: I have contributed novel approaches to approximating Ricci-flat metrics, advancing beyond traditional numerical methods. These techniques hold potential for a range of string theory applications and contribute to understanding moduli-dependent metrics, a subject of interest within SITP's string theory group.
+    \item \textbf{Simulation-Based Inference for Stellar Streams}: I developed an SBI pipeline using neural ratio estimation to infer the physical parameters of interest from stellar stream observations, laying the groundwork for a robust analysis of galactic and dark matter interactions.
+    \item \textbf{Physics-Inspired AI}: I am exploring frameworks for machine learning that incorporate insight from statistical and quantum phsics, including the theory of renormalization. I believe this will provide useful intersections with Stanford's interest in condensed matter physics.
+\end{itemize}
+
+I am enthusiastic about the potential for interdisciplinary collaboration with SITP members, given the range of domains where approximation and sampling challenges arise in physics. In particular, we have found overlapping interests with Professor Eva Silverstein on advanced sampling methods, combining my work on normalizing flows with their work on microcanonical HMC which highlights promising avenues for interdisciplinary research.
+
+Thank you for considering my application. I am excited by the opportunity to engage with SITP's rich intellectual community and to further develop approaches that bridge physics with modern computational techniques
+
+% \vspace{5pt}
+\noindent
+\flushright
+Sincerely, \\
+Mathis Gerdes \\
+\href{mailto:m.gerdes@uva.nl}{m.gerdes@uva.nl}
+
+\end{document}
