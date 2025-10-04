@@ -1,0 +1,482 @@
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage[margin=0.8in]{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{amsmath, physics, amssymb}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{xcolor}
+\definecolor{calmblue}{rgb}{0.2, 0.4, 0.7}
+\definecolor{accentblue}{rgb}{0.1, 0.3, 0.8}
+\usepackage[colorlinks=true, linkcolor=calmblue, urlcolor=calmblue, citecolor=calmblue]{hyperref}
+
+% Todo command for marking incomplete sections
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{TODO: #1}}}
+
+% Command for including PDFs with scaling (header already applied via pagecommand)
+\newcommand{\includepdfwithheader}[2][]{
+    \includepdf[#1,
+        pagecommand={\thispagestyle{fancy}},
+        scale=0.9,
+        offset=0 -20pt
+    ]{docs/#2}
+}
+
+\newcommand{\dateright}[1]{\hfill \textbf{#1}}
+
+% Document setup
+\title{}
+\author{}
+\date{}
+
+\pagestyle{fancy}
+\fancyhf{}
+% Two-row header design
+\fancyhead[L]{\begin{tabular}[b]{@{}l@{}}
+    \textbf{J-1 Visa Documentation - Mathis Gerdes} \\
+    \small\textit{\currentsection}
+\end{tabular}}
+\fancyhead[R]{\begin{tabular}[b]{@{}r@{}}
+    \textbf{Case: AA00EZ8M2B} \\
+    \phantom{\small\textit{placeholder}}
+\end{tabular}}
+\fancyfoot[C]{--- \thepage\ ---}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{28pt}
+
+% Variable to track current section
+\newcommand{\currentsection}{}
+
+% Custom section command that updates header
+\newcommand{\sectionwithheader}[1]{
+    \section{#1}
+    \renewcommand{\currentsection}{\thesection. #1}
+}
+
+\begin{document}
+
+% Cover Letter
+\section*{Response to Document Request - Case AA00EZ8M2B}
+
+\textbf{Subject:} V44 - MATHIS GERDES - REQUESTED DOCUMENT\\
+\textbf{Date:} \today\\
+\textbf{Applicant:} Mathis Gerdes\\
+\textbf{Visa Application Number:} AA00EZ8M2B
+
+Dear Consular Officer,
+
+Reference is made to your request dated September 23, 2025, for additional documentation to continue processing my J-1 visa application. This document contains the five requested items compiled into a single PDF as instructed:
+
+\begin{enumerate}
+\item \textbf{Résumé/Curriculum Vitae} - Updated comprehensive CV
+\item \textbf{Invitation/Offer Letter} - MIT IAIFI Fellowship offer letter (included as attachment)
+\item \textbf{Complete Itinerary} - Research timeline and planned U.S. activities
+\item \textbf{Publications List} - Complete list with abstracts of all publications and patents
+\item \textbf{Funding Information} - Detailed funding sources for research and travel
+\end{enumerate}
+
+\vspace{0.2cm}
+
+Sincerely,\\
+Mathis Gerdes
+
+\newpage
+
+% ===== SECTION 1: UPDATED CURRICULUM VITAE =====
+\sectionwithheader{Résumé/Curriculum Vitae}
+
+\vspace{0.4cm}
+% Header with name and contact info
+\begin{center}
+    {\Huge \textbf{Mathis Gerdes}} \\
+    \vspace{0.15cm}
+    Donker Curtiusstraat 3, E11, 1051 JL Amsterdam, The Netherlands \\
+    \href{mailto:mathisgerdes@gmail.com}{mathisgerdes@gmail.com} \textbullet\
+    Tel.: \raisebox{0.2\height}{\footnotesize +}49 174 8826 954 \textbullet\
+    \href{http://www.mathisgerdes.com}{mathisgerdes.com} \\
+    Academic: \href{mailto:m.gerdes@uva.nl}{m.gerdes@uva.nl}
+\end{center}
+
+\vspace{0.4cm}
+
+\paragraph{Research Interests}
+\textit{Quantum field theory, machine learning for physics, lattice QCD.}
+
+\section*{Education}
+\noindent
+\textbf{University of Amsterdam} -- PhD \textbf{Theoretical Physics} \dateright{Oct 2021 -- Oct 2025} \\
+Expected defense: October 3, 2025. \\
+Research in theoretical physics and deep learning, particularly for lattice field theory. \\
+\textit{Supervisors: Miranda C. N. Cheng, Christoph Weniger}
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{University of Edinburgh} -- MSc \textbf{Artificial Intelligence} \dateright{Sep 2020 -- Aug 2021} \\
+Graduated with distinction. \\
+Thesis: A Mechanized Investigation of an Axiomatic System for Minkowski Spacetime. \\
+\textit{Supervisor: Jacques Fleuriot}
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{TUM \& LMU Munich} -- MSc \textbf{Theoretical \& Mathematical Physics} \dateright{Oct 2018 -- Sep 2020} \\
+Graduated with high distinction. \\
+Thesis: Deep Learning Calabi-Yau Metrics. \\
+\textit{Supervisor: Sven Krippendorf}
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{University of Göttingen} -- BSc \textbf{Physics} \dateright{Oct 2014 -- Jun 2018} \\
+Graduated with distinction. \\
+Thesis: Using Hamiltonian Monte Carlo Techniques for Phase Space Sampling. \\
+\textit{Supervisor: Steffen Schumann}
+
+\section*{Extracurricular}
+\noindent
+\textbf{Research Visits} — \textit{Academia Sinica, Taiwan} \dateright{2022 (3 months), 2023 (2 months)} \\
+Academic visitor at Academia Sinica, Taipei, collaborating with my supervisor and researchers
+from the National Taiwan University (NTU) on joint research projects.
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{Freelance App Developer for Startup} — \textit{Munich \& Geneva} \dateright{2018 -- 2019} \\
+Part-time freelance work developing an
+application for graph analytics of email communications.
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{CERN Summer Student Programme} — \textit{CERN, Switzerland} \dateright{3 months, 2018} \\
+Internship accompanied by a lecture series at the AWAKE experimental project at CERN,
+analyzing the proton beam shape using two-dimensional density measurements.
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{Volunteer Teaching} — \textit{Hong Kong \& Macau} \dateright{1 month, 2017} \\
+Teaching English and programming to highschool students in Hong Kong and Macau.
+\vspace{0.2cm}
+
+\noindent
+\textbf{ERASMUS+ Exchange} — \textit{University of Edinburgh} \dateright{Sep 2016 -- May 2017}
+
+
+
+\section*{Teaching Experience}
+\noindent
+\textbf{Teaching Assistant} preparing problem sets, weekly student Q\&A sessions, designing and grading exams, oral student examinations, for MSc courses:
+\begin{itemize}
+    \item \href{https://coursecatalogue.uva.nl/xmlpages/page/2023-2024-en/search-course/course/109196}{\textit{Advanced Quantum Field Theory}} (64 hours) \dateright{2023 and 2024}
+    \item \href{https://coursecatalogue.uva.nl/xmlpages/page/2022-2023-en/search-course/course/99394}{\textit{Machine Learning for Physics and Astronomy}} (64 hours) \dateright{2022 and 2024}
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent
+\textbf{Co-supervisor} for two MSc students, devising their projects and providing weekly support.
+
+\vspace{0.2cm}
+\noindent
+\textbf{Lecturer} at \textit{Dutch Research School of Theoretical Physics} \dateright{2022} \\
+Prepared and gave a \href{https://www.drstp.nl/wp-content/uploads/2022/06/THEP-Schedule-2022.pdf}{lecture} on generative models in physics.
+
+\section*{Conferences \& Workshops}
+\underline{Invited Talks:}
+\begin{itemize}[left=0pt, itemsep=5pt]
+    \item {\href{https://indico.phys.nthu.edu.tw/event/149/timetable/#20250514}{Mini-workshop on lattice gauge theory and related topics for high-energy physics}} \dateright{ 14 May, 2025} \\
+    {\footnotesize \textbf{Talk}: Flow-based Sampling for Lattice Field Theory.”} \dateright{{\color{black}\textit{Taipei}}}
+
+    \item {\href{https://indico.phys.sinica.edu.tw/event/133/}{Lattice Field Theory and Machine Learning}} \dateright{ 5-6 Dec, 2024} \\
+    {\footnotesize \textbf{Talk}: Continuous normalizing flows for gauge theories.”} \dateright{{\color{black}\textit{Taipei}}}
+
+    \item {\href{http://pyweb.swan.ac.uk/~aarts/ml-lft-2024-programme.html}{ML meets LFT: Pre-LATTICE 2024 Workshop}} \dateright{ 24-26 Jul, 2024} \\
+    {\footnotesize \textbf{Talk}: “Exploring continuous normalizing flows for gauge theories.”} \dateright{{\color{black}\textit{Swansea}}}
+
+    \item {\href{https://indico.ectstar.eu/event/171/contributions/3849/}{ECT*: Machine learning for lattice field theory and beyond}} \dateright{ 26-30 May, 2023} \\
+    {\footnotesize \textbf{Talk}: “Continuous flows and transfer learning.”} \dateright{{\color{black}\textit{Trento}}}
+
+\end{itemize}
+
+\underline{Conferences \& Workshops:}
+
+\begin{itemize}[resume, itemsep=5pt]
+    \item {\href{https://mlphys.scphys.kyoto-u.ac.jp/stringdata2024/}{String Data 2024}} \dateright{10-12 Dec, 2024} \\
+    {\footnotesize \textbf{Talk}: “Physics informed generative models”} \dateright{{\color{black} \textit{Kyoto}}}
+
+    \item {\href{https://indico.ectstar.eu/event/206/contributions/4799/}{ECT*: Machine Learning and the Renormalization Group}} \dateright{ 27-31 May, 2024} \\
+    {\footnotesize \textbf{Talk}: “RG-inspired perspectives on diffusion models.”} \dateright{{\color{black}\textit{Trento}}}
+
+    \item {\href{https://indico.nikhef.nl/event/4875/contributions/20373/}{European AI for Fundamental Physics Conference 2024}} \dateright{ 30 Apr - 3 May, 2024} \\
+    {\footnotesize \textbf{Poster \& flash talk}: “Generative models and lattice field theory.”} \dateright{{\color{black}\textit{Amsterdam}}}
+
+    \item {\href{https://iaifi.org/past-workshops.html}{IAIFI 2023 Summer School \& Workshop}} \dateright{ 7-18 Aug, 2023} \\
+    {\footnotesize \textbf{Poster}: “Learning Lattice Quantum Field Theories with Equivariant Continuous Flows.”} \dateright{{\color{black}\textit{Boston}}}
+
+    \item {\href{https://agenda.infn.it/event/33851/}{At the interface of physics, mathematics and artificial intelligence}} \dateright{ 29 May - 2 Jun, 2023} \\
+    {\footnotesize \textbf{Talk}: “Deep Learning Calabi-Yau Metrics.”} \dateright{{\color{black}\textit{Pollica}}}
+
+    \item {\href{https://indico.ph.tum.de/event/7116/}{ML approaches in Lattice QCD - An interdisciplinary exchange}} \dateright{ 27 Feb - 3 Mar, 2023} \\
+    {\footnotesize \textbf{Poster}: “Learning Lattice Quantum Field Theories with Equivariant Continuous Flows.”} \dateright{{\color{black}\textit{Munich}}}
+
+    \item {\href{https://indico.ph.ed.ac.uk/event/124/}{Symposium: New Directions in Theoretical Physics 4}} \dateright{{\color{black}\textit{Edinburgh} -- } 10-12 Jan, 2023}
+
+    \item {\href{https://iaifi.org/past-workshops.html}{IAIFI 2022 Summer School \& Workshop}} \dateright{{\color{black}\textit{Boston} --} 1-9 Aug, 2022}
+
+    \item {\href{https://indico.mitp.uni-mainz.de/event/254/overview}{MITP workshop: A Deep-Learning Era of Particle Theory}} \dateright{ 13 Jun - 8 Jul, 2022} \\
+    {\footnotesize \textbf{Talk}: “Lattice QFT with Continuous Flows.”} \dateright{{\color{black}\textit{Mainz}}}
+
+    \item {\href{https://indico.cern.ch/event/875077/contributions/4481976/}{SUSY 2021}} \dateright{ 23-28 Aug, 2021} \\
+    {\footnotesize \textbf{Talk}: “Metrics from Machine Learning: Moduli-dependent Calabi-Yau} \dateright{{\color{black}\textit{Online}}}\\
+    {\footnotesize and SU(3)-structure metrics from machine learning.”}
+
+
+\end{itemize}
+
+
+\section*{Professional Activities and Community}
+\begin{itemize}[left=0pt, itemsep=3pt]
+    \item \textbf{IAIFI Fellow (Incoming)} — MIT, Cambridge, MA \dateright{from November 2025}
+    \item Local organizing committee \href{https://www.aanmelder.nl/eucaifcon24}{EuCAIFCon 24}: European AI for Fundamental Physics Conference.
+    \item (Co-)reviewer for journals, including \textit{Machine Learning: Science and Technology} and \textit{Nature}.
+\end{itemize}
+
+\section*{Publications \hfill
+{ \small
+\href{https://inspirehep.net/authors/2107097}{\includegraphics[height=14pt]{inspire.pdf} \hspace*{-7pt} \raisebox{0.5\height}{ INSPIRE}} \hspace*{10pt}
+\href{https://arxiv.org/a/gerdes_m_1.html}{\includegraphics[height=14pt]{arxiv.pdf} \hspace*{-10pt} \raisebox{0.5\height}{ ARXIV}}
+}
+}
+
+\begin{itemize}[left=0pt, itemsep=5pt]
+    \item {MG}, Pim de Haan, Roberto Bondesan, Miranda C. N. Cheng. \textit{Continuous Normalizing Flows For Lattice Gauge Theories.} October 2024.  \href{https://arxiv.org/abs/2410.13161}{arXiv:2410.13161}
+
+    \item {MG}, Max Welling, Miranda C. N. Cheng. \textit{GUD: Generation with Unified Diffusion.} October 2024. \href{https://arxiv.org/abs/2410.02667}{arXiv:2410.02667}
+
+    \item James Alvey, {MG}, Christoph Weniger. \textit{Albatross: a scalable simulation-based inference pipeline for analysing stellar streams in the Milky Way.} Mon.Not.Roy.Astron.Soc. 525 (2023) 3, 3662-3681. \href{https://arxiv.org/abs/2304.02032}{arXiv:2304.02032}.
+
+    \item {MG}, Sven Krippendorf. \textit{CYJAX: A package for Calabi-Yau metrics with JAX.} Mach.Learn.Sci.Tech. 4 (2023) 2, 02503. \href{https://arxiv.org/abs/2211.12520}{arXiv:2211.12520}.
+
+    \item {MG}, Pim de Haan, Corrado Rainone, Roberto Bondesan, Miranda C. N. Cheng. \textit{Learning Lattice Quantum Field Theories with Equivariant Continuous Flows.} SciPost Phys. 15 (2023), 238. \href{https://arxiv.org/abs/2207.00283}{arXiv:2207.00283}.
+
+    \item Lara B. Anderson, {MG}, James Gray, Sven Krippendorf, Nikhil Raghuram, Fabian Ruehle. \textit{Moduli-dependent Calabi-Yau and SU(3)-structure metrics from Machine Learning.} JHEP 05 (2021), 013. \href{https://arxiv.org/abs/2012.04656}{arXiv:2012.04656}.
+\end{itemize}
+
+\underline{In preparation:}
+
+\begin{itemize}[left=0pt, itemsep=5pt]
+    \item {MG}, Christoph Weniger. \textit{On Optimal Coverage Intervals at the Bayesian-Frequentist Crossroads.}
+\end{itemize}
+
+
+\section*{Technical Skills}
+Primary: \textit{Python (JAX, numpy), Julia, git, machine learning, scientific computing.} \\
+Experience: \textit{C, C++, JavaScript, Java, SQL, Dart, Haskell, Assembly, html, css.}
+
+\section*{Open-Source Software Contributions}
+\begin{itemize}[left=0pt, itemsep=3pt]
+    \item \textbf{Main developer} — \href{https://github.com/mathisgerdes/bijx}{BIJX: Bijections \& normalizing flows with JAX/NNX}
+    \item \textbf{Main developer} — \href{https://github.com/mathisgerdes/continuous-flow-lft}{JAXLFT: Continuous normalizing flows for lattice quantum field theory}.
+    \item \textbf{Main developer} — \href{https://github.com/ml4physics/cyjax}{CYJAX: Machine learning Calabi-Yau metrics with JAX}.
+    \item \textbf{Main contributor} — \href{https://github.com/undark-lab/sstrax}{SSTRAX: Modelling Milky Way stellar streams}.
+    \item \textbf{Contributor} (6 issues, 3 accepted pull requests) — \href{https://github.com/google/jax/issues?q=author:mathisgerdes}{JAX machine learning library}.
+    \item \textbf{Contributor} (1 issue, 1 accepted pull request) — \href{https://github.com/google/flax/issues?q=author:mathisgerdes}{Flax neural network library}.
+\end{itemize}
+
+
+\section*{References}
+\noindent
+\textbf{Miranda C.N. Cheng} — University of Amsterdam -- \href{mailto:c.n.cheng@uva.nl}{miranda.cheng@uva.nl} \\
+\textbf{Christoph Weniger} — University of Amsterdam  -- \href{mailto:c.weniger@uva.nl}{c.weniger@uva.nl} \\
+\textbf{Max Welling} — University of Amsterdam -- \href{mailto:welling.max@gmail.com}{welling.max@gmail.com} \\
+\textbf{Sven Krippendorf} — University of Cambridge -- \href{mailto:slk38@cam.ac.uk}{slk38@cam.ac.uk}
+
+\newpage
+
+% ===== SECTION 2: MIT INVITATION/OFFER LETTER =====
+\sectionwithheader{Invitation/Offer Letter from U.S. Host Organization}
+
+The complete MIT IAIFI Fellowship offer letter is included in the following pages. Key details:
+
+\textbf{Position:} IAIFI Fellow / Postdoctoral Associate\\
+\textbf{Duration:} 3 years, starting September 1, 2025 (delayed to November 1 due to PhD defense on 3 October) \\
+\textbf{Institution:} MIT Laboratory for Nuclear Science\\
+\textbf{Supervisor:} Prof. Jesse Thaler (Director, IAIFI)
+
+% Include the actual offer letter with consistent header overlay
+\includepdfwithheader[pages=-]{offer-cover-letter.pdf}
+
+\newpage
+
+% ===== SECTION 3: COMPLETE U.S. ITINERARY =====
+\sectionwithheader{Complete Itinerary and U.S. Research Activities}
+
+\subsection*{Travel to the United States}
+\textbf{Departure:} Amsterdam, Netherlands\\
+\textbf{Planned Arrival:} November 1, 2025, Boston Logan International Airport\\
+\textbf{Destination:} Cambridge, MA (MIT campus)\\
+\textbf{Start Date:} Delayed from original September 1, 2025 fellowship start due to PhD defense scheduled October 3, 2025 in Amsterdam
+
+\subsection*{Confirmed U.S. Activities}
+
+\textbf{November 2025:}
+\begin{itemize}[noitemsep]
+\item IAIFI orientation and integration (MIT, Cambridge, MA)
+\item IAIFI Colloquia presentation: November 21, 2025
+\item \textbf{Research visit:} Kavli Institute for Theoretical Physics, UC Santa Barbara
+\begin{itemize}
+    \item Duration: November 23 - December 20, 2025
+    \item Program: ``Generative AI for High \& Low Energy Physics'' workshop
+\end{itemize}
+\end{itemize}
+
+\subsection*{Research Activities (2026-2028)}
+
+\textbf{Primary Location:} MIT Laboratory for Nuclear Science, Cambridge, MA\\
+\textbf{Research Focus:} Machine learning applications in lattice field theory and fundamental physics
+
+\textbf{Expected Activities:}
+\begin{itemize}[noitemsep]
+\item Regular research collaboration with IAIFI faculty and fellows
+\item Conference presentations (specific events determined by research progress)
+\item Research visits to collaborating institutions as opportunities arise
+\item Publication of research results in peer-reviewed journals
+\end{itemize}
+
+\textbf{Conference \& Workshop Planning:} Specific conferences will be selected based on research developments and scientific opportunities, typically 2-6 months in advance as is standard in academic research.
+
+\subsection*{Departure from United States}
+\textbf{End of Fellowship:} approximately August 31, 2028\\
+\textbf{Planned Return:} Germany, with specific destination depending on future academic and career opportunities
+
+\newpage
+
+% ===== SECTION 4: PUBLICATIONS AND RESEARCH OUTPUT =====
+\sectionwithheader{List of Publications and Patents with Abstracts}
+
+There are no patents or pending patent applications.
+
+\subsection*{\underline{Peer-Reviewed Publications}}
+
+\textbf{Albatross: a scalable simulation-based inference pipeline for analysing stellar streams in the Milky Way}\\
+\textit{Authors:} James Alvey, Mathis Gerdes, Christoph Weniger\\
+\textit{Date:} 16 August 2023 \\
+\textit{Publication:} Monthly Notices of the Royal Astronomical Society, Volume 525, Issue 3, November 2023, Pages 3662-3681 \\
+\href{https://doi.org/10.1093/mnras/stad2458}{https://doi.org/10.1093/mnras/stad2458}\\
+\textit{Abstract:} Stellar streams are potentially a very sensitive observational probe of galactic astrophysics, as well as the dark matter population in the Milky Way. On the other hand, performing a detailed, high-fidelity statistical analysis of these objects is challenging for a number of key reasons. First, the modelling of streams across their (potentially billions of years old) dynamical age is complex and computationally costly. Secondly, their detection and classification in large surveys such as Gaia renders a robust statistical description regarding e.g. the stellar membership probabilities, challenging. As a result, the majority of current analyses must resort to simplified models that use only subsets or summaries of the high quality data. In this work, we develop a new analysis framework that takes advantage of advances in simulation-based inference techniques to perform complete analysis on complex stream models. To facilitate this, we develop a new, modular dynamical modelling code sstrax for stellar streams that is highly accelerated using jax. We test our analysis pipeline on a mock observation that resembles the GD1 stream, and demonstrate that we can perform robust inference on all relevant parts of the stream model simultaneously. Finally, we present some outlook as to how this approach can be developed further to perform more complete and accurate statistical analyses of current and future data.
+
+\textbf{CYJAX: A package for Calabi-Yau metrics with JAX}\\
+\textit{Authors:} Mathis Gerdes, Sven Krippendorf\\
+\textit{Date:} November 22, 2022 \\
+\textit{Publication:} Machine Learning: Science and Technology, Volume 4, Number 2 \\
+\href{https://doi.org/10.1088/2632-2153/acdc84}{https://doi.org/10.1088/2632-2153/acdc84}\\
+\textit{Abstract:} We present the first version of CYJAX, a package for machine learning Calabi–Yau metrics using JAX. It is meant to be accessible both as a top-level tool and as a library of modular functions. CYJAX is currently centered around the algebraic ansatz for the Kähler potential which automatically satisfies Kählerity and compatibility on patch overlaps. As of now, this implementation is limited to varieties defined by a single defining equation on one complex projective space. We comment on some planned generalizations. More documentation can be found at: \href{https://cyjax.readthedocs.io}{https://cyjax.readthedocs.io}. The code is available at: \href{https://github.com/ml4physics/cyjax}{https://github.com/ml4physics/cyjax}.
+
+\textbf{Learning lattice quantum field theories with equivariant continuous flows}\\
+\textit{Authors:} Mathis Gerdes, Pim de Haan, Corrado Rainone, Roberto Bondesan, Miranda C.N. Cheng\\
+\textit{Date:} July 1, 2022 \\
+\textit{Publication:} SciPost Phys. 15, 238 (2023) \\
+\href{https://doi.org/10.21468/SciPostPhys.15.6.238}{https://doi.org/10.21468/SciPostPhys.15.6.238}\\
+\textit{Abstract:} We propose a novel machine learning method for sampling from the high-dimensional probability distributions of Lattice Field Theories, which is based on a single neural ODE layer and incorporates the full symmetries of the problem. We test our model on the $\phi^4$ theory, showing that it systematically outperforms previously proposed flow-based methods in sampling efficiency, and the improvement is especially pronounced for larger lattices. Furthermore, we demonstrate that our model can learn a continuous family of theories at once, and the results of learning can be transferred to larger lattices. Such generalizations further accentuate the advantages of machine learning methods.
+
+\textbf{Moduli-dependent Calabi-Yau and SU(3)-structure metrics from Machine Learning}\\
+\textit{Authors:} Lara B. Anderson, Mathis Gerdes, James Gray, Sven Krippendorf, Nikhil Raghuram, Fabian Ruehle\\
+\textit{Date:} December 8, 2020 \\
+\textit{Publication:} Journal of High Energy Physics, Volume 2021, article number 13, (2021) \\
+\href{https://doi.org/10.1007/JHEP05(2021)013}{https://doi.org/10.1007/JHEP05(2021)013}\\
+\textit{Abstract:} We use machine learning to approximate Calabi-Yau and SU(3)-structure metrics, including for the first time complex structure moduli dependence. Our new methods furthermore improve existing numerical approximations in terms of accuracy and speed. Knowing these metrics has numerous applications, ranging from computations of crucial aspects of the effective field theory of string compactifications such as the canonical normalizations for Yukawa couplings, and the massive string spectrum which plays a crucial role in swampland conjectures, to mirror symmetry and the SYZ conjecture. In the case of SU(3) structure, our machine learning approach allows us to engineer metrics with certain torsion properties. Our methods are demonstrated for Calabi-Yau and SU(3)-structure manifolds based on a one-parameter family of quintic hypersurfaces in $\mathbb{P}$.
+
+\subsection*{\underline{Preprints}}
+
+
+\textbf{Continuous normalizing flows for lattice gauge theories}\\
+\textit{Authors:} Mathis Gerdes, Pim de Haan, Roberto Bondesan, Miranda C.N. Cheng\\
+\textit{Date:} October 17, 2024\\
+\textit{Status:} Pre-print (\href{https://arxiv.org/abs/2410.13161}{arXiv:2410.13161}), submitted to journal (Physical Review D)\\
+\textit{Abstract:} Continuous normalizing flows are known to be highly expressive and flexible, which allows for easier incorporation of large symmetries and makes them a powerful tool for sampling in lattice field theories. Building on previous work, we present a general continuous normalizing flow architecture for matrix Lie groups that is equivariant under group transformations. We apply this to lattice gauge theories in two dimensions as a proof-of-principle and demonstrate competitive performance, showing its potential as a tool for future lattice sampling tasks.
+
+\textbf{GUD: Generation with Unified Diffusion}\\
+\textit{Authors:} Mathis Gerdes, Max Welling, Miranda C.N. Cheng\\
+\textit{Date:} October 3, 2024\\
+\textit{Status:} Pre-print (\href{https://arxiv.org/abs/2410.02667}{arXiv:2410.02667})\\
+\textit{Abstract:} Diffusion generative models transform noise into data by inverting a process that progressively adds noise to data samples. Inspired by concepts from the renormalization group in physics, which analyzes systems across different scales, we revisit diffusion models by exploring three key design aspects: 1) the choice of representation in which the diffusion process operates (e.g. pixel-, PCA-, Fourier-, or wavelet-basis), 2) the prior distribution that data is transformed into during diffusion (e.g. Gaussian with covariance $\Sigma$), and 3) the scheduling of noise levels applied separately to different parts of the data, captured by a component-wise noise schedule. Incorporating the flexibility in these choices, we develop a unified framework for diffusion generative models with greatly enhanced design freedom. In particular, we introduce soft-conditioning models that smoothly interpolate between standard diffusion models and autoregressive models (in any basis), conceptually bridging these two approaches. Our framework opens up a wide design space which may lead to more efficient training and data generation, and paves the way to novel architectures integrating different generative approaches and generation tasks.
+
+
+\subsection*{\underline{Academic Theses and Technical Reports}}
+
+\textbf{MSc Thesis: A Mechanized Investigation of an Axiomatic System for Minkowski Spacetime}\\
+\textit{Supervisor:} Jacques Fleuriot\\
+\textit{Institution:} University of Edinburgh\\
+\textit{Date:} August 2021 \\
+\textit{Abstract:} Einstein's theory of special relativity replaced the Euclidean space at the heart of Galilean physics with the new geometry of Minkowski space. Aiming to establishing a verified foundation for special relativity, this MSc project continues the mechanization of an axiomatic system for Minkowski space developed by Schutz in the interactive theorem prover Isabelle/HOL. First, the existing partial formalization is critically reviewed and several changes made to it are discussed. A new mechanization of the third theorem of collinearity introduced in Schutz's monograph is discussed. This required the development of new rigorous proofs capturing geometric intuitions which Schutz apparently derives from pictorial representations. Techniques to avoid combinatorial explosions arising in the mechanization of geometric proofs, by capturing without loss of generality notions, are discussed.
+
+\textbf{MSc Thesis: Deep Learning Calabi-Yau Metrics}\\
+\textit{Supervisor:} Dr. Sven Krippendorf\\
+\textit{Institution:} Ludwig-Maximilians-Universität München\\
+\textit{Date:} September 2020 \\
+\textit{Abstract:} No analytic expressions for the Ricci-flat metrics on compact Calabi-Yau manifolds are known, which has led to the development of multiple numerical approximation schemes. This thesis shows that a deep learning approach using the energy functionals introduced by Headrick and Nassar can replace existing methods to approximate Calabi-Yau metrics on projective varieties. Building on top of the algebraic metrics introduced for Donaldson's algorithm, the deep learning models introduced here can predict approximations to the Ricci-flat metric as a function of complex moduli parameters. A comparison with the benchmark of balanced metrics produced by Donaldson's algorithm indicates these approximations are of relatively higher accuracy, justifying it as an alternative, standalone approximation scheme. This approach is facilitated by modern machine learning frameworks, which provide efficient automatic differentiation that can be used to derive geometrical objects, and work with complicated, geometrically motivated loss functions.
+
+
+\textbf{CERN Summer Student Report: Analyzing the Transverse Profile of Self-Modulated Proton Bunches at AWAKE}\\
+\textit{Supervisors:} Marlene Turner, Edda Gschwendtner\\
+\textit{Institution:} CERN, Geneva, Switzerland\\
+\textit{Date:} September 2018\\
+\textit{Abstract:} The AWAKE experiment is designed to study electron acceleration in plasma wakefields driven by self-modulated proton bunches. This project focuses on analyzing the transverse, time-integrated profile of the proton bunches after selfmodulation in rubidium plasma. The size and shape of these profiles can be used to verify the presence of self-modulation for each event and to study the influence of experimental parameters on the modulation process.
+
+\textbf{BSc Thesis: Using Hamiltonian Monte Carlo Techniques for Phase Space Sampling}\\
+\textit{Supervisor:} Prof. Dr. Steffen Schumann\\
+\textit{Institution:} Georg-August-Universität Göttingen\\
+\textit{Date:} June 2018\\
+\textit{Abstract:} The generation of phase space events in high energy particle physics is commonly done using a Metropolis-Hasting unweighting algorithm with fixed proposal distribution. The multi-channel Markov chain Monte Carlo algorithm (MC$^3$) introduced in [1] proposes a mixing of the fixed proposal method with a local Metropolis update. Based on this framework, the feasibility and performance improvement of using Hamiltonian (Hybrid) Monte Carlo (HMC) is analyzed. Performance is measured based on the number of target density evaluations and the introduced autocorrelation between events. Based on the analysis of a toy problem, the combined HMC-MC$^3$ is found to improve on the sample convergence behavior of the fixed target proposal and reduces the autocorrelation of the local HMC method for strongly peaked distributions. While the overall approach seems promising, various parameters must be tuned for individual target distributions to obtain optimal performance.
+
+\newpage
+
+% ===== SECTION 5: FUNDING SOURCES =====
+\sectionwithheader{Information Regarding Sources of Funding}
+
+\subsection*{Primary Funding: MIT IAIFI Fellowship}
+
+\textbf{Fellowship Details:} NSF AI Institute for Artificial Intelligence and Fundamental Interactions\\
+\textbf{Institution:} Massachusetts Institute of Technology\\
+\textbf{Duration:} September 2025 - August 2028 (3 years)\\
+\textbf{Total Fellowship Value:} \$248,700 (as documented in DS-2019 form)
+
+\textbf{Annual Support:}
+\begin{itemize}[noitemsep]
+\item Salary: \$82,900
+\item Research funds: \$8,000
+\item Moving allowance: \$1,000 (first year)
+\item Health insurance and MIT employee benefits
+\end{itemize}
+
+\textbf{Complete Coverage:} This fellowship provides full financial support for all research activities, living expenses, and professional development throughout my stay in the United States.
+
+\subsection*{Research and Travel Funding}
+
+\textbf{Conference and Research Travel:}
+\begin{itemize}[noitemsep]
+\item Annual research allocation: \$8,000 for conference attendance, research visits, and professional travel
+\item Host institution funding for specific research visits when applicable (e.g., KITP program at UC Santa Barbara)
+\end{itemize}
+
+\textbf{Research Materials and Equipment:} Covered through MIT Laboratory for Nuclear Science and IAIFI computational resources.
+
+\subsection*{Additional Financial Resources}
+
+\textbf{Personal Savings:} I maintain additional financial resources to supplement the fellowship and ensure financial security throughout my research period.
+
+\subsection*{Financial Independence}
+
+The MIT IAIFI Fellowship provides comprehensive financial support for the duration of my J-1 research program. This funding structure ensures I can complete my research objectives without requiring any external funding sources or employment outside the fellowship.
+
+
+
+
+\end{document}

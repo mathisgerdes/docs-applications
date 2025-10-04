@@ -1,0 +1,246 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{relsize} % Allows for relative size adjustments
+\usepackage{graphicx}
+
+
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+% \setmainfont{TeX Gyre Termes}
+
+% Custom section fonts and colors
+\definecolor{calmblue}{rgb}{0.2, 0.3, 0.7} % A calm and professional blue
+\definecolor{accentblue}{rgb}{0.2, 0.3, 0.7} % Accent color for dates
+
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=calmblue, citecolor=black]{hyperref}
+
+
+% Adjusting section title format and spacing
+
+\titleformat{\section}
+  {\vspace{-0.5em}\Large\bfseries\scshape} % Small caps section titles
+  {}
+  {0em}
+  {} % Title first, no hrule before
+  [\vspace{-0.1em}\hrule\vspace{0em}] % hrule after title with balanced spacing
+
+% Reducing space around lists for compactness
+\setlist[itemize]{left=0pt, topsep=2pt, itemsep=1pt, parsep=1pt}
+
+
+% Helper command for right-aligned dates
+\newcommand{\dateright}[1]{\hfill{\small\color{accentblue} #1}}
+
+% Compacting paragraph spacing
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% Header with name and contact info
+\begin{center}
+    {\LARGE \textbf{Mathis Gerdes}} \\
+    \vspace{0.15cm}
+    Science Park 904, 1098 XH Amsterdam, The Netherlands \\
+    \href{mailto:mathisgerdes@gmail.com}{mathisgerdes@gmail.com} \textbullet\
+    Tel.: \raisebox{0.2\height}{\footnotesize +}49 174 8826 954 \textbullet\
+    \href{http://www.mathisgerdes.com}{mathisgerdes.com}
+\end{center}
+
+\vspace{0.4cm}
+
+\paragraph{Research Interests}
+\textit{Quantum field theory, machine learning for physics, lattice QCD.}
+
+\section*{Education}
+\noindent
+\textbf{University of Amsterdam} -- PhD \textbf{Theoretical Physics} \dateright{Oct 2021 -- Oct 2025} \\
+Research in theoretical physics and deep learning, particularly for lattice field theory. \\
+\textit{Supervisors: Miranda C. N. Cheng, Christoph Weniger}
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{University of Edinburgh} -- MSc \textbf{Artificial Intelligence} \dateright{Sep 2020 -- Aug 2021} \\
+Graduated with distinction. \\
+Thesis: A Mechanized Investigation of an Axiomatic System for Minkowski Spacetime. \\
+\textit{Supervisor: Jacques Fleuriot}
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{TUM \& LMU Munich} -- MSc \textbf{Theoretical \& Mathematical Physics} \dateright{Oct 2018 -- Sep 2020} \\
+Graduated with high distinction. \\
+Thesis: Deep Learning Calabi-Yau Metrics. \\
+\textit{Supervisor: Sven Krippendorf}
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{University of Göttingen} -- BSc \textbf{Physics} \dateright{Oct 2014 -- Jun 2018} \\
+Graduated with distinction. \\
+Thesis: Using Hamiltonian Monte Carlo Techniques for Phase Space Sampling. \\
+\textit{Supervisor: Steffen Schumann}
+
+\section*{Extracurricular}
+\noindent
+\textbf{Research Visits} — \textit{Academia Sinica, Taiwan} \dateright{2022 (3 months), 2023 (2 months)} \\
+Academic visitor at Academia Sinica, Taipei, collaborating with my supervisor and researchers
+from the National Taiwan University (NTU) on joint research projects.
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{Freelance App Developer for Startup} — \textit{Munich \& Geneva} \dateright{2018 -- 2019} \\
+Part-time freelance work developing an
+application for graph analytics of email communications.
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{CERN Summer Student Programme} — \textit{CERN, Switzerland} \dateright{3 months, 2018} \\
+Internship accompanied by a lecture series at the AWAKE experimental project at CERN,
+analyzing the proton beam shape using two-dimensional density measurements.
+
+\vspace{0.2cm}
+
+\noindent
+\textbf{Volunteer Teaching} — \textit{Hong Kong \& Macau} \dateright{1 month, 2017} \\
+Teaching English and programming to highschool students in Hong Kong and Macau.
+\vspace{0.2cm}
+
+\noindent
+\textbf{ERASMUS+ Exchange} — \textit{University of Edinburgh} \dateright{Sep 2016 -- May 2017}
+
+
+
+\section*{Teaching Experience}
+\noindent
+\textbf{Teaching Assistant} preparing problem sets, weekly student Q\&A sessions, designing and grading exams, oral student examinations, for MSc courses:
+\begin{itemize}
+    \item \href{https://coursecatalogue.uva.nl/xmlpages/page/2023-2024-en/search-course/course/109196}{\textit{Advanced Quantum Field Theory}} (64 hours) \dateright{2023 and 2024}
+    \item \href{https://coursecatalogue.uva.nl/xmlpages/page/2022-2023-en/search-course/course/99394}{\textit{Machine Learning for Physics and Astronomy}} (64 hours) \dateright{2022 and 2024}
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent
+\textbf{Co-supervisor} for two MSc students, devising their projects and providing weekly support.
+
+\vspace{0.2cm}
+\noindent
+\textbf{Lecturer} at \textit{Dutch Research School of Theoretical Physics} \dateright{2022} \\
+Prepared and gave a \href{https://www.drstp.nl/wp-content/uploads/2022/06/THEP-Schedule-2022.pdf}{lecture} on generative models in physics.
+
+\section*{Conferences \& Workshops}
+\underline{Invited Talks:}
+\begin{itemize}[left=0pt, itemsep=5pt]
+    \item {\href{https://indico.phys.nthu.edu.tw/event/149/timetable/#20250514}{Mini-workshop on lattice gauge theory and related topics for high-energy physics}} \dateright{ 14 May, 2025} \\
+    {\footnotesize \textbf{Talk}: Flow-based Sampling for Lattice Field Theory.”} \dateright{{\color{black}\textit{Taipei}}}
+
+    \item {\href{https://indico.phys.sinica.edu.tw/event/133/}{Lattice Field Theory and Machine Learning}} \dateright{ 5-6 Dec, 2024} \\
+    {\footnotesize \textbf{Talk}: Continuous normalizing flows for gauge theories.”} \dateright{{\color{black}\textit{Taipei}}}
+
+    \item {\href{http://pyweb.swan.ac.uk/~aarts/ml-lft-2024-programme.html}{ML meets LFT: Pre-LATTICE 2024 Workshop}} \dateright{ 24-26 Jul, 2024} \\
+    {\footnotesize \textbf{Talk}: “Exploring continuous normalizing flows for gauge theories.”} \dateright{{\color{black}\textit{Swansea}}}
+
+    \item {\href{https://indico.ectstar.eu/event/171/contributions/3849/}{ECT*: Machine learning for lattice field theory and beyond}} \dateright{ 26-30 May, 2023} \\
+    {\footnotesize \textbf{Talk}: “Continuous flows and transfer learning.”} \dateright{{\color{black}\textit{Trento}}}
+
+\end{itemize}
+
+\underline{Conferences \& Workshops:}
+
+\begin{itemize}[resume, itemsep=5pt]
+    \item {\href{https://mlphys.scphys.kyoto-u.ac.jp/stringdata2024/}{String Data 2024}} \dateright{10-12 Dec, 2024} \\
+    {\footnotesize \textbf{Talk}: “Physics informed generative models”} \dateright{{\color{black} \textit{Kyoto}}}
+
+    \item {\href{https://indico.ectstar.eu/event/206/contributions/4799/}{ECT*: Machine Learning and the Renormalization Group}} \dateright{ 27-31 May, 2024} \\
+    {\footnotesize \textbf{Talk}: “RG-inspired perspectives on diffusion models.”} \dateright{{\color{black}\textit{Trento}}}
+
+    \item {\href{https://indico.nikhef.nl/event/4875/contributions/20373/}{European AI for Fundamental Physics Conference 2024}} \dateright{ 30 Apr - 3 May, 2024} \\
+    {\footnotesize \textbf{Poster \& flash talk}: “Generative models and lattice field theory.”} \dateright{{\color{black}\textit{Amsterdam}}}
+
+    \item {\href{https://iaifi.org/past-workshops.html}{IAIFI 2023 Summer School \& Workshop}} \dateright{ 7-18 Aug, 2023} \\
+    {\footnotesize \textbf{Poster}: “Learning Lattice Quantum Field Theories with Equivariant Continuous Flows.”} \dateright{{\color{black}\textit{Boston}}}
+
+    \item {\href{https://agenda.infn.it/event/33851/}{At the interface of physics, mathematics and artificial intelligence}} \dateright{ 29 May - 2 Jun, 2023} \\
+    {\footnotesize \textbf{Talk}: “Deep Learning Calabi-Yau Metrics.”} \dateright{{\color{black}\textit{Pollica}}}
+
+    \item {\href{https://indico.ph.tum.de/event/7116/}{ML approaches in Lattice QCD - An interdisciplinary exchange}} \dateright{ 27 Feb - 3 Mar, 2023} \\
+    {\footnotesize \textbf{Poster}: “Learning Lattice Quantum Field Theories with Equivariant Continuous Flows.”} \dateright{{\color{black}\textit{Munich}}}
+
+    \item {\href{https://indico.ph.ed.ac.uk/event/124/}{Symposium: New Directions in Theoretical Physics 4}} \dateright{{\color{black}\textit{Edinburgh} -- } 10-12 Jan, 2023}
+
+    \item {\href{https://iaifi.org/past-workshops.html}{IAIFI 2022 Summer School \& Workshop}} \dateright{{\color{black}\textit{Boston} --} 1-9 Aug, 2022}
+
+    \item {\href{https://indico.mitp.uni-mainz.de/event/254/overview}{MITP workshop: A Deep-Learning Era of Particle Theory}} \dateright{ 13 Jun - 8 Jul, 2022} \\
+    {\footnotesize \textbf{Talk}: “Lattice QFT with Continuous Flows.”} \dateright{{\color{black}\textit{Mainz}}}
+
+    \item {\href{https://indico.cern.ch/event/875077/contributions/4481976/}{SUSY 2021}} \dateright{ 23-28 Aug, 2021} \\
+    {\footnotesize \textbf{Talk}: “Metrics from Machine Learning: Moduli-dependent Calabi-Yau} \dateright{{\color{black}\textit{Online}}}\\
+    {\footnotesize and SU(3)-structure metrics from machine learning.”}
+
+
+\end{itemize}
+
+
+\section*{Professional Activities and Community}
+\begin{itemize}[left=0pt, itemsep=3pt]
+    % \item (Co-)reviewed papers including for Machine Learning: Science and Technology.
+    \item Local organizing committee \href{https://www.aanmelder.nl/eucaifcon24}{EuCAIFCon 24}: European AI for Fundamental Physics Conference.
+    \item (Co-)reviewer for journals, including \textit{Machine Learning: Science and Technology}.
+\end{itemize}
+
+\section*{Publications}
+
+\begin{itemize}[left=0pt, itemsep=5pt]
+    \item {MG}, Pim de Haan, Roberto Bondesan, Miranda C. N. Cheng. \textit{Continuous Normalizing Flows For Lattice Gauge Theories.} October 2024.  \href{https://arxiv.org/abs/2410.13161}{arXiv:2410.13161}
+
+    \item {MG}, Max Welling, Miranda C. N. Cheng. \textit{GUD: Generation with Unified Diffusion.} October 2024. \href{https://arxiv.org/abs/2410.02667}{arXiv:2410.02667}
+
+    \item James Alvey, {MG}, Christoph Weniger. \textit{Albatross: a scalable simulation-based inference pipeline for analysing stellar streams in the Milky Way.} Mon.Not.Roy.Astron.Soc. 525 (2023) 3, 3662-3681. \href{https://arxiv.org/abs/2304.02032}{arXiv:2304.02032}.
+
+    \item {MG}, Sven Krippendorf. \textit{CYJAX: A package for Calabi-Yau metrics with JAX.} Mach.Learn.Sci.Tech. 4 (2023) 2, 02503. \href{https://arxiv.org/abs/2211.12520}{arXiv:2211.12520}.
+
+    \item {MG}, Pim de Haan, Corrado Rainone, Roberto Bondesan, Miranda C. N. Cheng. \textit{Learning Lattice Quantum Field Theories with Equivariant Continuous Flows.} SciPost Phys. 15 (2023), 238. \href{https://arxiv.org/abs/2207.00283}{arXiv:2207.00283}.
+
+    \item Lara B. Anderson, {MG}, James Gray, Sven Krippendorf, Nikhil Raghuram, Fabian Ruehle. \textit{Moduli-dependent Calabi-Yau and SU(3)-structure metrics from Machine Learning.} JHEP 05 (2021), 013. \href{https://arxiv.org/abs/2012.04656}{arXiv:2012.04656}.
+\end{itemize}
+
+\underline{In preparation:}
+
+\begin{itemize}[left=0pt, itemsep=5pt]
+    \item {MG}, Christoph Weniger. \textit{On Optimal Coverage Intervals at the Bayesian-Frequentist Crossroads.}
+\end{itemize}
+
+
+\section*{Technical Skills}
+Primary: \textit{Python (JAX, numpy), Julia, git, machine learning, scientific computing.} \\
+Experience: \textit{C, C++, JavaScript, Java, SQL, Dart, Haskell, Assembly, html, css.}
+
+\section*{Open-Source Software Contributions}
+\begin{itemize}[left=0pt, itemsep=3pt]
+    \item \textbf{Main developer} — \href{https://github.com/mathisgerdes/bijx}{BIJX: Bijections \& normalizing flows with JAX/NNX}
+    \item \textbf{Main developer} — \href{https://github.com/mathisgerdes/continuous-flow-lft}{JAXLFT: Continuous normalizing flows for lattice quantum field theory}.
+    \item \textbf{Main developer} — \href{https://github.com/ml4physics/cyjax}{CYJAX: Machine learning Calabi-Yau metrics with JAX}.
+    \item \textbf{Main contributor} — \href{https://github.com/undark-lab/sstrax}{SSTRAX: Modelling Milky Way stellar streams}.
+    \item \textbf{Contributor} (6 issues, 3 accepted pull requests) — \href{https://github.com/google/jax/issues?q=author:mathisgerdes}{JAX machine learning library}.
+    \item \textbf{Contributor} (1 issue, 1 accepted pull request) — \href{https://github.com/google/flax/issues?q=author:mathisgerdes}{Flax neural network library}.
+\end{itemize}
+
+
+\section*{References}
+\noindent
+\textbf{Miranda C.N. Cheng} — University of Amsterdam -- \href{mailto:c.n.cheng@uva.nl}{miranda.cheng@uva.nl} \\
+\textbf{Christoph Weniger} — University of Amsterdam  -- \href{mailto:c.weniger@uva.nl}{c.weniger@uva.nl} \\
+\textbf{Max Welling} — University of Amsterdam -- \href{mailto:welling.max@gmail.com}{welling.max@gmail.com} \\
+\textbf{Sven Krippendorf} — University of Cambridge -- \href{mailto:slk38@cam.ac.uk}{slk38@cam.ac.uk}
+
+\end{document}
